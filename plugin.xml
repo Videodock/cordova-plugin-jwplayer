@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-jwplayer" version="1.0.0">
+    <name>cordova-plugin-jwplayer</name>
+    <description>Cordova Jwplayer Plugin</description>
+    <license>MIT</license>
+    <keywords>jwplayer, videoplayer, video, media, player sdk</keywords>
+    <repo>https://github.com/videodock/cordova-plugin-jwplayer.git</repo>
+    <issue>https://github.com/videodock/cordova-plugin-jwplayer/issues</issue>
+
+    <js-module src="www/jwplayer.js" name="jwplayerSdk">
+        <clobbers target="jwplayerSdk"/>
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="jwplayerSdk">
+                <param name="ios-package" value="JWPlayerPlugin" onload="true"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/JWPlayerPlugin.h"/>
+        <source-file src="src/ios/JWPlayerPlugin.m"/>
+        <framework src="src/ios/libs/JWPlayer-iOS-SDK.framework" custom="true"/>
+    </platform>
+</plugin>

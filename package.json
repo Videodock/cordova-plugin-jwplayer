@@ -1,0 +1,12 @@
+{
+  "name": "cordova-plugin-jwplayer",
+  "version": "0.1.0",
+  "cordova": {
+    "id": "cordova-plugin-jwplayer",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "description": ""
+}
