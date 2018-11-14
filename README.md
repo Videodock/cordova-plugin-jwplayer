@@ -1,3 +1,5 @@
+**NOTE:** This project is not maintained. The easiest way to implement JW Player into your Cordova project is to use the web player. Alternatively, take a look at the [iOS](https://developer.jwplayer.com/ios-sdk/) and [Android](https://developer.jwplayer.com/android-sdk/) SDKs.
+
 Cordova JW Player Plugin
 ======
 
